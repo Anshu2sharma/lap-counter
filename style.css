@@ -1,0 +1,23 @@
+.forms{
+
+    display: inline-block;
+    align-items: center;
+     justify-content: center;
+    height: 400px;
+display: grid;
+background-color: rgb(255, 255, 255);
+/* border: 2px solid green; */
+width: 400px;
+}
+
+
+.container-form{
+    /* border: 2px solid rgb(128, 0, 100); */
+
+    display:grid;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+
