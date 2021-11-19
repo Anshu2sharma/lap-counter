@@ -1,29 +1,35 @@
-// document.getElementById('myelement').innerHTML="";
 
 
 
-// const num =document.getElementById('myelement');
+let num1 = 0;
 
-// let count = 1 ;
+const clicked = () => {
+   // console.log("clicked ");
+   const num = document.getElementById('myelement');
+   num1++;
+   num.innerText = num1;
+}
 
-// setInterval(() => {
-   //    count++;
-   //   num.innerText= count;
-   // }, 1000);
-   
-   
-   let count = 0;
-   const clicked = () => {
-   
-      const num = document.getElementById('myelement');
+
+const unclicked = () => {
+   // console.log("clicked ");
+   const num = document.getElementById('myelement');
+   if (num1>0) {
+      num1--;
       
-      count++;
-      num.innerText = count;
-   }
-   
-   let count1 = 0;
-   const reset =()=>{
-      const num = document.getElementById('myelement');
-      num.innerText = count1;
-      
-   }
+   }else(num1)
+   num.innerText = num1;
+}
+
+
+
+
+
+ let num=0;
+ 
+ setInterval(() => {
+   const timer = document.getElementById('timer');   
+   timer.innerHTML=num++;
+ }, 1000);
+
+ 
